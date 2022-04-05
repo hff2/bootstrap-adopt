@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./stylesheets/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <style>
         body{
@@ -30,24 +31,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-5">
-                        <a class="nav-link active text-primary" aria-current="page" href="#">首頁</a>
+                        <a class="nav-link active text-primary fw-bold" aria-current="page" href="#">首頁</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">服務介紹</a>
+                        <a class="nav-link fw-bold" href="#">服務介紹</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">設計作品</a>
+                        <a class="nav-link fw-bold" href="#">設計作品</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">領養專區</a>
+                        <a class="nav-link fw-bold" href="#">領養專區</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-primary rounded-pill" href="#">毛孩似顏繪</a>
+                        <a class="btn btn-primary rounded-pill fw-bold px-5" href="#">毛孩似顏繪</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <picture class="position-relative">
+        <!-- 桌面版圖片 -->
+        <source media="(min-width: 576px)" srcset="images/home@2x.png" />
+        <!-- 手機版圖片 -->
+        <img class="img-fluid mb-lg-4" src="images/home_mobile@2x.png" alt="home" />
+        <!-- 文字預設消失，桌面版再出現 -->
+        <p class="position-absolute top-0 start-50 translate-middle banner-font-style d-none d-lg-block">Full of fur. Full of love</p>
+    </picture>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
