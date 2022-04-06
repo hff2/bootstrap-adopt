@@ -33,7 +33,7 @@
             opacity: 1;
         }
         img{
-            transition: .2s ease-in-out;;
+            transition: .2s ease-in-out;
             filter:brightness(70%);
         }
     }
@@ -42,3 +42,47 @@
 .custom-border{
     border: 1px solid #3A3A3A;
 }
+
+// index: 後方圖片
+.custom-bg-img{
+    background-size: cover;
+    background-position: bottom center;
+}
+
+// index: 領養專區
+.custom-img-rounded{
+    border-radius: 24px 24px 0px 0px;
+}
+
+// index: 領養專區卡片
+@mixin custom-card-content($url){
+    box-shadow: 0 .5rem 1rem rgba($black, .15);
+    transition: box-shadow 0.5s;
+    a{
+        color: $black;
+    }
+    &:hover{
+        box-shadow: 0 1rem 1.5rem rgba($black, .35);
+        transition: .2s ease-in-out;
+        img{
+            content: url($url);
+        }
+        .custom-text{
+            a{
+                transition: .2s ease-in-out;
+                color:$yellow;
+            }
+        }
+    }
+}
+
+.custom-card-1{
+    @include custom-card-content('../../images/dog01-hover-1@2x.png')
+}
+.custom-card-2{
+    @include custom-card-content('../../images/dog01-hover@2x.png')
+}
+.custom-card-3{
+    @include custom-card-content('../../images/dog01-hover-2@2x.png')
+}
+
