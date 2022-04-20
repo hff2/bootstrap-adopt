@@ -86,3 +86,7 @@
     @include custom-card-content('../../images/dog01-hover-2@2x.png')
 }
 
+// index: 客製化我的毛孩
+.img-change:hover img{
+    content: url("../images/btn2.png");
+}
